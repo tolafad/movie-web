@@ -1,8 +1,9 @@
+import UpMovieList from './UpMovieList';
 import React from 'react';
-import MovieList from './movieListing';;
 import Header from './Header';
 
-const Movies = () => {
+
+const UpMovies = () => {
 
     return (
 
@@ -23,7 +24,7 @@ const Movies = () => {
                             <center>
                                 <h2 style={{ color: 'white' }} >Movies Page</h2>
                             </center>
-                            <MovieList />
+                            <UpMovieList />
                         </div>
                     </section>
                 </section>
@@ -33,4 +34,4 @@ const Movies = () => {
     )
 }
 
-export default Movies;
+export default UpMovies;

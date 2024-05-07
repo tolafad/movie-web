@@ -1,12 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { shuffle } from './home';
 
 import DisplayMoviesCard from './displayMoviesCard';
 
-const MovieList = () => {
+const UpMovieList = () => {
 
     let { movies } = useSelector((state) => state.movie);
 
+    let shuffledMovies = shuffle(movies);
 
     const renderList = (movielist) => {
 
@@ -37,14 +39,14 @@ const MovieList = () => {
         <div className="container-lg">
 
             <div className="row">
-                {renderList(movies)}
+                {
+                    renderList(shuffledMovies)
+                }
             </div>
         </div>
 
     )
 }
 
-export default MovieList;
-
-
+export default UpMovieList;
 

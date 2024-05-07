@@ -13,15 +13,15 @@ const MovieSlice = createSlice({
             state.movies.push(action.payload)
         },
         saveMovie(state, action) {
-            console.log("action: " + action);
+            console.log("saveMovie action: " + action);
             state.movie = action.payload;
         },
         saveMovies(state, action) {
-            console.log("action: " + action);
+            console.log("saveMovies action: " + action);
             state.movies = action.payload;
         },
         saveTransaction(state, action) {
-            console.log("action: " + action);
+            console.log("saveTransaction action: " + action);
             state.transaction = action.payload;
         }
     }
